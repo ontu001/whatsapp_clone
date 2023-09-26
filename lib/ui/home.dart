@@ -9,6 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 4,
+      initialIndex: 1,
       child: Scaffold(
         appBar: AppBar(
           title: Text('WhatApp'),
@@ -39,17 +40,8 @@ class Home extends StatelessWidget {
             ),
           ]),
         ),
-
-
-
-
         backgroundColor: Color.fromARGB(255, 28, 42, 49),
-        body: TabBarView(children: [
-          gRoup(),
-          cHats(),
-          uPdate(),
-          cAlls()
-        ]),
+        body: TabBarView(children: [gRoup(), cHats(), uPdate(), cAlls()]),
       ),
     );
   }
