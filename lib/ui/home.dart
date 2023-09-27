@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
       initialIndex: 1,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('WhatApp'),
+          title: Text('WhatsApp'),
           backgroundColor: Color.fromARGB(255, 41, 60, 70),
           elevation: 1,
           actions: [
