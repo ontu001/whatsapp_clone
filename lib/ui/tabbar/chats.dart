@@ -22,6 +22,16 @@ class cHats extends StatelessWidget {
     'Today we have ameeting',
     'hello',
   ];
+
+  List<String> img = [
+    'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/166f66122c499bc8daded90bcaa4833e-1683027548932/f1562857-6b60-48a0-842a-c0493cbfa839.png',
+    'https://thumbs.dreamstime.com/z/fashion-young-man-suit-posing-looking-to-side-grey-background-fashion-young-man-suit-posing-looking-to-side-162927324.jpg',
+    'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/166f66122c499bc8daded90bcaa4833e-1683027548932/f1562857-6b60-48a0-842a-c0493cbfa839.png',
+    'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/166f66122c499bc8daded90bcaa4833e-1683027548932/f1562857-6b60-48a0-842a-c0493cbfa839.png',
+    'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/166f66122c499bc8daded90bcaa4833e-1683027548932/f1562857-6b60-48a0-842a-c0493cbfa839.png',
+    'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/166f66122c499bc8daded90bcaa4833e-1683027548932/f1562857-6b60-48a0-842a-c0493cbfa839.png',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +50,7 @@ class cHats extends StatelessWidget {
             name: (name[index]),
             icon: (icn[index]),
             message: (msg[index]),
+            imgurl: (img[index]),
           );
         },
       ),

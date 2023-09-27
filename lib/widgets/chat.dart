@@ -1,20 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/ui/inbox.dart';
 
 class Chat extends StatelessWidget {
   final name;
   final IconData icon;
   final message;
-  Chat({required this.name, required this.icon, this.message});
+  final String imgurl;
+  Chat({
+    required this.name,
+    required this.icon,
+    this.message,
+    required this.imgurl,
+  });
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => InboX()));
+      },
       selectedTileColor: Colors.grey.shade100,
       titleTextStyle: TextStyle(color: Colors.white),
       leading: CircleAvatar(
         radius: 30,
-        backgroundImage: NetworkImage(
-            'https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/166f66122c499bc8daded90bcaa4833e-1683027548932/f1562857-6b60-48a0-842a-c0493cbfa839.png'),
+        backgroundImage: NetworkImage(imgurl),
       ),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
