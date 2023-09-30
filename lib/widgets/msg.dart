@@ -11,10 +11,10 @@ class messageR extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Container(
-                padding: EdgeInsets.only(left: 15, top: 12),
+          padding: EdgeInsets.only(left: 15, top: 12),
           margin: EdgeInsets.all(5),
-          width: 200,
-          height: 45,
+          width: 250,
+          height: 51,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: Colors.blue,

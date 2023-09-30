@@ -14,7 +14,7 @@ class messageL extends StatelessWidget {
           padding: EdgeInsets.only(left: 15, top: 12),
           margin: EdgeInsets.all(5),
           width: 200,
-          height: 45,
+          height: 50,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: Color.fromARGB(255, 20, 31, 37),
