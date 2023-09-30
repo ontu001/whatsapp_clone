@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text('WhatsApp'),
-          backgroundColor: Color.fromARGB(255, 41, 60, 70),
+          backgroundColor: Color.fromARGB(255, 25, 39, 46),
           elevation: 1,
           actions: [
             IconButton(

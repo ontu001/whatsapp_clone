@@ -14,25 +14,28 @@ class customForm extends StatelessWidget {
       required this.hintText,
       required this.obsecureText,
       required this.suffixIcon,
-      this.keyboardtype, required this.prefixIcon});
+      this.keyboardtype,
+      required this.prefixIcon});
 
   @override
   Widget build(Object context) {
     return Container(
-  
-      padding: EdgeInsets.only(left: 13, right: 13, top: 5),
+      padding: EdgeInsets.only(left: 13, right: 13, top: 0),
       decoration: BoxDecoration(
-          color: Colors.grey.shade200, borderRadius: BorderRadius.circular(22)),
+          color: Color.fromARGB(255, 20, 31, 37),
+          borderRadius: BorderRadius.circular(22)),
       child: TextField(
         controller: controller,
         keyboardType: keyboardtype,
+        style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
             border: InputBorder.none,
             hintText: hintText,
             hintStyle: TextStyle(fontSize: 12, color: Colors.grey),
             suffixIcon: suffixIcon,
             prefixIcon: prefixIcon,
-            suffixIconColor: Colors.red),
+            prefixIconColor: Colors.grey,
+            suffixIconColor: Colors.grey),
       ),
     );
   }
