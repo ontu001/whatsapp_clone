@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/ui/home.dart';
+import 'package:whatsapp_clone/ui/tabbar/chats.dart';
 import 'package:whatsapp_clone/widgets/custom_form.dart';
 import 'package:whatsapp_clone/widgets/message.dart';
 import 'package:whatsapp_clone/widgets/msg.dart';
@@ -13,7 +15,9 @@ class InboX extends StatelessWidget {
         title: Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));
+              },
               icon: Icon(
                 Icons.arrow_back,
                 color: Colors.white,
@@ -21,12 +25,15 @@ class InboX extends StatelessWidget {
             ),
             CircleAvatar(
               radius: 15,
-              backgroundImage: NetworkImage('https://media.licdn.com/dms/image/D5603AQHRt3DD4S0S8g/profile-displayphoto-shrink_100_100/0/1677103156866?e=1701302400&v=beta&t=RkN3svSvJWfTSVgY5lVE2QGtej89fhfV0XaGWg85TSo'),
+              backgroundImage: NetworkImage(
+                  'https://media.licdn.com/dms/image/D5603AQHRt3DD4S0S8g/profile-displayphoto-shrink_100_100/0/1677103156866?e=1701302400&v=beta&t=RkN3svSvJWfTSVgY5lVE2QGtej89fhfV0XaGWg85TSo'),
             ),
-            SizedBox(width: 4,),
+            SizedBox(
+              width: 4,
+            ),
             Text(
               'Rohan',
-              style: TextStyle(color: Colors.white,fontSize: 15),
+              style: TextStyle(color: Colors.white, fontSize: 15),
             )
           ],
         ),
@@ -40,15 +47,14 @@ class InboX extends StatelessWidget {
       body: Column(children: [
         Expanded(
             child: ListView(
-              scrollDirection: Axis.vertical,
+          scrollDirection: Axis.vertical,
           children: [
-            SizedBox(height: 10,),
-            
-            
+            SizedBox(
+              height: 10,
+            ),
             messageL(text: 'hello'),
             messageL(text: 'how are you?'),
             messageL(text: 'hows your day'),
-
             messageR(text: 'hi there'),
             messageR(text: 'Im fine what about you?'),
             messageR(text: 'yeah everything is going good')
